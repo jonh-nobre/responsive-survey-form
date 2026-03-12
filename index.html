@@ -31,6 +31,41 @@ Objetivo: Praticar a criação de formulários usando HTML e CSS
              </p>
 
          </header>
+
+         <!-- Início do formulário -->
+         <form id ="survey-form">
+
+            <!-- Campo para inserir  o nome -->
+             <div class="form-group">
+               <label id="name-label" for="name">Nome</label>
+
+               <!-- Input de texto obrigatório para o nome do usuário -->
+               <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Digite o seu nome"
+                  required
+               />
+             </div>
+
+             <!-- Campo para inserir o email -->
+              <div class="form-group">
+               <label id="email-label" for="email">E-mail</label>
+
+               <!-- Input do tipo email com validação automática  -->
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-contol"
+                  placeholder="Digite o seu e-mail"
+                  required
+                />
+              </div>
+
+         </form>
          
     </div>
 
