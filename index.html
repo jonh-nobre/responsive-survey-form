@@ -37,7 +37,7 @@ Objetivo: Praticar a criação de formulários usando HTML e CSS
 
             <!-- Campo para inserir  o nome -->
              <div class="form-group">
-               <label id="name-label" for="name">Nome</label>
+               <label id="name-label" for="name">Nome:</label>
 
                <!-- Input de texto obrigatório para o nome do usuário -->
                <input
@@ -52,7 +52,7 @@ Objetivo: Praticar a criação de formulários usando HTML e CSS
 
              <!-- Campo para inserir o email -->
               <div class="form-group">
-               <label id="email-label" for="email">E-mail</label>
+               <label id="email-label" for="email">E-mail:</label>
 
                <!-- Input do tipo email com validação automática  -->
                 <input
@@ -68,7 +68,7 @@ Objetivo: Praticar a criação de formulários usando HTML e CSS
               <!-- Campo para inserir a idade (opcional) -->
                <div class="form-group">
                   <label id="number-label" for="number">
-                  Age <span class="clue">(optional)</span>
+                  Idade <span class="clue">(opcional):</span>
                   </label>
 
                   <!-- Input numérico com limite mínimo e máximo -->
@@ -79,11 +79,34 @@ Objetivo: Praticar a criação de formulários usando HTML e CSS
                   min="10"
                   max="99"
                   class="form-control"
-                  placeholder="Age"
+                  placeholder="Idade"
                   />
                </div>
+
+               <!-- Pergunta sobre a ocupação atual do usuário -->
+                <div class="form-group">
+                  <p>Qual a opção que melhor descreve sua função atual?</p>
+
+                  <!-- Menu suspenso para selecionar a ocupação -->
+                   <select id="dropdown" name="role" class="form-control" required>
+
+                     <!-- Opção padrão desabilitada -->
+                      <option disabled selected value>
+                        Selecione a função atual
+                      </option>
+
+                      <option value="student">Estudante</option>
+                      <option value="job">Vaga de tempo integral</option>
+                      <option value="learner">Estudante em tempo integral</option>
+                      <option value="preferNO">Prefiro não dizer</option>
+                      <option value="other">Outra</option>
+
+                   </select>
+
+                </div>
+
+
          </form>
-         
     </div>
 
 </body>
